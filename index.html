@@ -44,6 +44,11 @@
             }
         }
     </style>
+    <script>
+        function openDocument() {
+            window.open("assets/docs/Resume.pdf", "_blank");
+        }
+    </script>
 </head>
 
 <body class="md:container mx-auto text-gray-600 bg-gray-100 relative" id="home">
@@ -109,7 +114,7 @@
                         learn and seek opportunities to improve my skills.
                     </p>
                     <div class="flex">
-                        <button
+                        <button onclick="openDocument()"
                             class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400 flex items-center">
                             Dowload Resume
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
