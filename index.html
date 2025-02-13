@@ -25,44 +25,73 @@
             }
 
             .icon-div {
-                padding: 1.25rem; /* p-5 */
-                background-color: white; /* bg-white */
-                display: flex; /* flex */
-                flex-direction: column; /* flex-col */
-                gap: 0.75rem; /* gap-3 */
-                align-items: center; /* items-center */
-                justify-content: center; /* justify-center */
-                border-radius: 0.75rem; /* rounded-xl */
+                padding: 1.25rem;
+                /* p-5 */
+                background-color: white;
+                /* bg-white */
+                display: flex;
+                /* flex */
+                flex-direction: column;
+                /* flex-col */
+                gap: 0.75rem;
+                /* gap-3 */
+                align-items: center;
+                /* items-center */
+                justify-content: center;
+                /* justify-center */
+                border-radius: 0.75rem;
+                /* rounded-xl */
             }
         }
     </style>
 </head>
 
-<body class="md:container mx-auto text-gray-600 bg-gray-100">
-    <header class="flex justify-between py-4 items-center">
-        <h1 class="text-xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
-            Dave Njeru
-        </h1>
-        <div class="basis-2/3">
-            <ul class="flex justify-evenly">
-                <li class="on-hover">Home</li>
-                <li class="on-hover">About</li>
-                <li class="on-hover">Education & Experience</li>
-                <li class="on-hover">Portfolio</li>
-                <li class="on-hover">Skills</li>
-                <li class="on-hover">Certifications</li>
-                <li class="on-hover">Contact</li>
-            </ul>
-        </div>
-        <div>
-            <button
-                class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400">
-                Hire Me!
-            </button>
-        </div>
+<body class="md:container mx-auto text-gray-600 bg-gray-100 relative" id="home">
+    <header class="fixed top-0 z-50 shadow-md sm:container bg-white">
+        <nav class="py-4">
+            <!-- <div class="flex justify-between items-center lg:hidden">
+                <h1
+                    class="text-sm md:text-xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
+                    Dave Njeru
+                </h1>
+                <div class="px-4 cursor-pointer " id="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+            </div> -->
+
+            <div class="flex justify-between items-center content-center" id="second-nav">
+                <h1
+                    class="text-xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
+                    Dave Njeru
+                </h1>
+                <ul class="flex justify-between basis-2/3 ">
+                    <li class="on-hover"><a href="#home">Home</a></li>
+                    <li class="on-hover"><a href="#about">About</a></li>
+                    <li class="on-hover">
+                        <a href="#education">Education & Experience</a>
+                    </li>
+                    <li class="on-hover"><a href="#projects">Projects</a></li>
+                    <li class="on-hover"><a href="#tools">Tools</a></li>
+                    <li class="on-hover"><a href="#contact">Contact</a></li>
+                </ul>
+                <div>
+                    <a href="#contact">
+                        <button
+                            class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400">
+                            Hire Me!
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
     </header>
 
-    <main>
+    <main class="lg:mt-20 sm:mt-15">
         <section>
             <!--INTRO-->
             <div class="flex bg-white">
@@ -90,24 +119,30 @@
                             </svg>
                         </button>
 
-                        <button
-                            class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400 flex items-center">
-                            View my work
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6 pl-2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            </svg>
-                        </button>
+                        <a href="#projects">
+                            <button
+                                class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400 flex items-center">
+                                View my work
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6 pl-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </a>
                     </div>
                     <div>
-                        <i class="fa fa-linkedin border-solid border-1 p-2 rounded-full border-rose-400 text-rose-400"
-                            aria-hidden="true"></i>
+                        <a href="https://www.linkedin.com/in/ndwigadave" target="_blank">
+                            <i class="fa fa-linkedin border-solid border-1 p-2 rounded-full border-rose-400 text-rose-400"
+                                aria-hidden="true"></i>
+                        </a>
 
-                        <i class="fa fa-github border-solid border-1 p-2 rounded-full border-rose-400 text-rose-400 ml-2"
-                            aria-hidden="true"></i>
+                        <a href="https://github.com/Dave-Njeru" target="_blank">
+                            <i class="fa fa-github border-solid border-1 p-2 rounded-full border-rose-400 text-rose-400 ml-2"
+                                aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="w-1/3">
@@ -116,21 +151,24 @@
             </div>
         </section>
 
-        <section>
+        <section id="about">
             <!--ABOUT-->
             <h1 class="uppercase text-center text-rose-400 py-4">about me</h1>
             <p class="bg-white p-6">
                 I am a final-year computer science student with a strong passion for
-                software development. I have proficiency in HTML, Tailwind CSS, JavaScript, PHP, and
-                MySQL. Currently, I am enhancing my knowledge in Python, GraphQL,
-                RESTful APIs, Prisma, Flask, and Linux. I am actively seeking opportunities to
-                apply my skills and gain valuable work experience.
+                software development. I have proficiency in HTML, Tailwind CSS,
+                JavaScript, PHP, and MySQL. Currently, I am enhancing my knowledge in
+                Python, GraphQL, RESTful APIs, Prisma, Flask, and Linux. I am actively
+                seeking opportunities to apply my skills and gain valuable work
+                experience.
             </p>
         </section>
 
-        <section>
+        <section id="education">
             <!--EDUCATION AND EXPERIENCE-->
-            <h1 class="uppercase text-center text-rose-400 py-4">experience and education</h1>
+            <h1 class="uppercase text-center text-rose-400 py-4">
+                experience and education
+            </h1>
             <div class="flex gap-5">
                 <!--education-->
                 <div class="w-1/2 flex flex-col gap-4">
@@ -140,19 +178,23 @@
                     </h3>
                     <div class="bg-white p-5 rounded-xl">
                         <h3 class="text-sky-400">2024</h3>
-                        <p class="uppercase font-bold text-2xl">game of learners - clinics</p>
+                        <p class="uppercase font-bold text-2xl">
+                            game of learners - clinics
+                        </p>
                         <p>Microsoft, Kenya - Remote</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">2022 -
-                            PRESENT</h3>
-                        <p class="uppercase font-bold text-2xl">bachelor of science in computer science</p>
+                        <h3 class="text-sky-400">2022 - PRESENT</h3>
+                        <p class="uppercase font-bold text-2xl">
+                            bachelor of science in computer science
+                        </p>
                         <p>Mount Kenya University, Thika</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">2019 - 2021
-                        </h3>
-                        <p class="uppercase font-bold text-2xl">diploma in software engineering</p>
+                        <h3 class="text-sky-400">2019 - 2021</h3>
+                        <p class="uppercase font-bold text-2xl">
+                            diploma in software engineering
+                        </p>
                         <p>Zetect University, Ruiru</p>
                     </div>
                 </div>
@@ -163,9 +205,7 @@
                         <span>My Experience</span>
                     </h3>
                     <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">
-                            2021 - PRESENT
-                        </h3>
+                        <h3 class="text-sky-400">2021 - PRESENT</h3>
                         <p class="uppercase font-bold text-2xl">independent contractor</p>
                         <p>CloudFactory, Kenya - Remote</p>
                     </div>
@@ -173,90 +213,113 @@
             </div>
         </section>
 
-        <section>
+        <section id="projects">
             <!--PROJECTS-->
             <h1 class="uppercase text-center text-rose-400 py-4">my recent work</h1>
             <div class="grid grid-cols-2 gap-4">
                 <div class="hover:opacity-50 transition ease-out duraction-300">
-                    <img src="assets/img/projects/carestream.png" alt="carestream">
+                    <img src="assets/img/projects/carestream.png" alt="carestream" />
                 </div>
-                <img src="assets/img/projects/zeeliu.png" alt="zeeliu">
-                <img src="assets/img/projects/meta.png" alt="meta">
+                <img src="assets/img/projects/zeeliu.png" alt="zeeliu" />
+                <img src="assets/img/projects/meta.png" alt="meta" />
             </div>
         </section>
 
-        <section>
+        <section id="tools">
+            <!--TOOLS-->
             <h1 class="uppercase text-center text-rose-400 py-4">skills</h1>
             <div class="grid grid-cols-8 gap-3">
                 <div class="icon-div">
-                    <img src="assets/img/icons/html-5.svg" alt="html" class="h-20">
+                    <img src="assets/img/icons/html-5.svg" alt="html" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">html</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/css-3.svg" alt="css" class="h-20">
+                    <img src="assets/img/icons/css-3.svg" alt="css" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">css</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/bootstrap.svg" alt="bootstrap" class="h-20">
+                    <img src="assets/img/icons/bootstrap.svg" alt="bootstrap" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">bootstrap</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/tailwind.svg" alt="tailwind" class="h-20">
+                    <img src="assets/img/icons/tailwind.svg" alt="tailwind" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">tailwindcss</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/javascript.svg" alt="javascript" class="h-20">
+                    <img src="assets/img/icons/javascript.svg" alt="javascript" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">javascript</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/node-js.svg" alt="node" class="h-20">
+                    <img src="assets/img/icons/node-js.svg" alt="node" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">node.js</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/jest.svg" alt="jest" class="h-20">
+                    <img src="assets/img/icons/jest.svg" alt="jest" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">jest</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/php3.svg" alt="php" class="h-20">
+                    <img src="assets/img/icons/php3.svg" alt="php" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">php</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/mysql.svg" alt="mysql" class="h-20">
+                    <img src="assets/img/icons/mysql.svg" alt="mysql" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">mysql</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/python.svg" alt="python" class="h-20">
+                    <img src="assets/img/icons/python.svg" alt="python" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">python</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/flask.svg" alt="flask" class="h-20">
+                    <img src="assets/img/icons/flask.svg" alt="flask" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">flask</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/rest-api.svg" alt="rest" class="h-20">
+                    <img src="assets/img/icons/rest-api.svg" alt="rest" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">restful api</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/prisma.svg" alt="prisma" class="h-20">
+                    <img src="assets/img/icons/prisma.svg" alt="prisma" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">prisma</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/git.svg" alt="git" class="h-20">
+                    <img src="assets/img/icons/git.svg" alt="git" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">git & github</h1>
                 </div>
                 <div class="icon-div">
-                    <img src="assets/img/icons/linux.svg" alt="linux" class="h-20">
+                    <img src="assets/img/icons/linux.svg" alt="linux" class="h-20" />
                     <h1 class="uppercase font-bold text-orange-400">linux</h1>
-                </div>  
+                </div>
             </div>
         </section>
 
-        <section>
-            <!--CERTIFICATIONs-->
-            <h1 class="uppercase text-center text-rose-400 py-4">certifications</h1>
-            <div>list all of certifications here</div>
+        <section id="contact">
+            <!--CONTACT-->
+            <h1 class="uppercase text-center text-rose-400 py-4">contact</h1>
+            <div class="flex gap-6 justify-center items-center bg-white py-15 text-2xl">
+                <div>
+                    <i class="fa fa-phone text-3xl" aria-hidden="true"></i>
+                    <span>+254 111 376 951</span>
+                </div>
+                <div><span>|</span></div>
+                <div>
+                    <i class="fa fa-envelope-o text-3xl" aria-hidden="true"></i>
+                    <span>davenjeru9@gmail.com</span>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="py-4">
+        <hr />
+        <div class="py-6 flex justify-between text-sm">
+            <div>
+                Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2025. All
+                rights reserved
+            </div>
+            <div>
+                <h1>Powered By Github</h1>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
