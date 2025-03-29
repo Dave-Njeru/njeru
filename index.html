@@ -51,24 +51,10 @@
     </script>
 </head>
 
-<body class="md:container mx-auto text-gray-600 bg-gray-100 relative" id="home">
-    <header class="fixed top-0 z-50 shadow-md sm:container bg-white">
+<body class="md:container mx-auto mt-3 text-gray-600 bg-gray-100" id="home">
+    <header class="sticky top-0 shadow-md bg-white">
         <nav class="py-4">
-            <!-- <div class="flex justify-between items-center lg:hidden">
-                <h1
-                    class="text-sm md:text-xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
-                    Dave Njeru
-                </h1>
-                <div class="px-4 cursor-pointer " id="burger">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </div>
-            </div> -->
-
-            <div class="flex justify-between items-center content-center" id="second-nav">
+            <div class="flex justify-between items-center content-center">
                 <h1
                     class="text-xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
                     Dave Njeru
@@ -92,11 +78,10 @@
                     </a>
                 </div>
             </div>
-
         </nav>
     </header>
 
-    <main class="lg:mt-20 sm:mt-15">
+    <main class="mt-2">
         <section>
             <!--INTRO-->
             <div class="flex bg-white">
@@ -222,11 +207,15 @@
             <!--PROJECTS-->
             <h1 class="uppercase text-center text-rose-400 py-4">my recent work</h1>
             <div class="grid grid-cols-2 gap-4">
-                <div class="hover:opacity-50 transition ease-out duraction-300">
+                <div>
                     <img src="assets/img/projects/carestream.png" alt="carestream" />
                 </div>
-                <img src="assets/img/projects/zeeliu.png" alt="zeeliu" />
-                <img src="assets/img/projects/meta.png" alt="meta" />
+                <div>
+                    <img src="assets/img/projects/zeeliu.png" alt="zeeliu" />
+                </div>
+                <div>
+                    <img src="assets/img/projects/meta.png" alt="meta" />
+                </div>
             </div>
         </section>
 
@@ -236,63 +225,63 @@
             <div class="grid grid-cols-8 gap-3">
                 <div class="icon-div">
                     <img src="assets/img/icons/html-5.svg" alt="html" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">html</h1>
+                    <div class="uppercase font-bold text-orange-400">html</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/css-3.svg" alt="css" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">css</h1>
+                    <div class="uppercase font-bold text-orange-400">css</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/bootstrap.svg" alt="bootstrap" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">bootstrap</h1>
+                    <div class="uppercase font-bold text-orange-400">bootstrap</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/tailwind.svg" alt="tailwind" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">tailwindcss</h1>
+                    <div class="uppercase font-bold text-orange-400">tailwindcss</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/javascript.svg" alt="javascript" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">javascript</h1>
+                    <div class="uppercase font-bold text-orange-400">javascript</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/node-js.svg" alt="node" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">node.js</h1>
+                    <div class="uppercase font-bold text-orange-400">node.js</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/jest.svg" alt="jest" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">jest</h1>
+                    <div class="uppercase font-bold text-orange-400">jest</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/php3.svg" alt="php" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">php</h1>
+                    <div class="uppercase font-bold text-orange-400">php</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/mysql.svg" alt="mysql" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">mysql</h1>
+                    <div class="uppercase font-bold text-orange-400">mysql</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/python.svg" alt="python" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">python</h1>
+                    <div class="uppercase font-bold text-orange-400">python</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/flask.svg" alt="flask" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">flask</h1>
+                    <div class="uppercase font-bold text-orange-400">flask</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/rest-api.svg" alt="rest" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">restful api</h1>
+                    <div class="uppercase font-bold text-orange-400">restful api</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/prisma.svg" alt="prisma" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">prisma</h1>
+                    <div class="uppercase font-bold text-orange-400">prisma</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/git.svg" alt="git" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">git & github</h1>
+                    <div class="uppercase font-bold text-orange-400">git & github</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/linux.svg" alt="linux" class="h-20" />
-                    <h1 class="uppercase font-bold text-orange-400">linux</h1>
+                    <div class="uppercase font-bold text-orange-400">linux</div>
                 </div>
             </div>
         </section>
