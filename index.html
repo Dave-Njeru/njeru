@@ -7,11 +7,6 @@
     <title>Dave Njeru: Software Developer</title>
     <link rel="stylesheet" href="assets/css/output.css">
     <script src="https://kit.fontawesome.com/d0bdada029.js" crossorigin="anonymous"></script>
-    <script>
-        function openDocument() {
-            window.open("assets/docs/Resume.pdf", "_blank");
-        }
-    </script>
 </head>
 
 <body class="md:container mx-auto mt-3 text-gray-600 bg-gray-100" id="home">
@@ -25,9 +20,7 @@
                 <ul class="flex justify-between basis-2/3 ">
                     <li class="nav-link-hover"><a href="#home">Home</a></li>
                     <li class="nav-link-hover"><a href="#about">About</a></li>
-                    <li class="nav-link-hover">
-                        <a href="#education">Education & Experience</a>
-                    </li>
+                    <li class="nav-link-hover"><a href="#education">Education</a></li>
                     <li class="nav-link-hover"><a href="#projects">Projects</a></li>
                     <li class="nav-link-hover"><a href="#tools">Tools</a></li>
                     <li class="nav-link-hover"><a href="#contact">Contact</a></li>
@@ -51,8 +44,8 @@
                 <div class="w-2/3 p-5 flex flex-col justify-around">
                     <h1 class="text-4xl">Hi, I'm Dave Njeru</h1>
                     <h2
-                        class="text-6xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
-                        Back-End Web Developer
+                        class="text-4xl font-bold bg-gradient-to-r from-sky-600 to-lime-500 bg-clip-text text-transparent ml-1">
+                        Web Application Developer
                     </h2>
                     <p class="text-xl">
                         Developing or being part of a team that creates brilliant software
@@ -62,16 +55,6 @@
                         learn and seek opportunities to improve my skills.
                     </p>
                     <div class="flex">
-                        <button onclick="openDocument()"
-                            class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400 flex items-center">
-                            Dowload Resume
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6 pl-2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                            </svg>
-                        </button>
-
                         <a href="#projects">
                             <button
                                 class="cursor-pointer tracking-wider uppercase font-bold text-sm border-solid border-1 py-2 px-3 mr-4 rounded-full border-rose-400 text-rose-400 hover:text-white hover:bg-rose-500 transition ease-out duration-400 flex items-center">
@@ -109,59 +92,31 @@
             <h1 class="uppercase text-center text-rose-400 py-4">about me</h1>
             <p class="bg-white p-6">
                 I am a final-year computer science student with a strong passion for
-                software development. I have proficiency in HTML, Tailwind CSS,
-                JavaScript, PHP, and MySQL. Currently, I am enhancing my knowledge in
-                Python, GraphQL, RESTful APIs, Prisma, Flask, and Linux. I am actively
+                software development. I have proficiency in HTML, CSS,
+                JavaScript, PHP, and MySQL. Currently, I am enhancing my knowledge in MERN Stack. I am actively
                 seeking opportunities to apply my skills and gain valuable work
                 experience.
             </p>
         </section>
 
         <section id="education">
-            <!--EDUCATION AND EXPERIENCE-->
-            <h1 class="uppercase text-center text-rose-400 py-4">
-                experience and education
-            </h1>
-            <div class="flex gap-5">
-                <!--education-->
-                <div class="w-1/2 flex flex-col gap-4">
-                    <h3 class="justify-center flex gap-5 text-3xl items-center text-purple-500">
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        <span>My Education</span>
-                    </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">2024</h3>
-                        <p class="uppercase font-bold text-2xl">
-                            game of learners - clinics
-                        </p>
-                        <p>Microsoft, Kenya - Remote</p>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">2022 - PRESENT</h3>
-                        <p class="uppercase font-bold text-2xl">
-                            bachelor of science in computer science
-                        </p>
-                        <p>Mount Kenya University, Thika</p>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">2019 - 2021</h3>
-                        <p class="uppercase font-bold text-2xl">
-                            diploma in software engineering
-                        </p>
-                        <p>Zetect University, Ruiru</p>
-                    </div>
+            <!--EDUCATIONE-->
+            <h1 class="uppercase text-center text-rose-400 py-4">education</h1>
+            <!--education-->
+            <div class="flex justify-around gap-4">
+                <div class="bg-white p-5 rounded-xl">
+                    <h3 class="text-sky-400">2022 - PRESENT</h3>
+                    <p class="uppercase font-bold text-2xl">
+                        bachelor of science in computer science
+                    </p>
+                    <p>Mount Kenya University, Thika</p>
                 </div>
-                <!--experiences-->
-                <div class="w-1/2 flex flex-col gap-4">
-                    <h3 class="justify-center flex gap-5 text-3xl items-center text-purple-500">
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        <span>My Experience</span>
-                    </h3>
-                    <div class="bg-white p-5 rounded-xl">
-                        <h3 class="text-sky-400">2021 - PRESENT</h3>
-                        <p class="uppercase font-bold text-2xl">independent contractor</p>
-                        <p>CloudFactory, Kenya - Remote</p>
-                    </div>
+                <div class="bg-white p-5 rounded-xl">
+                    <h3 class="text-sky-400">2019 - 2021</h3>
+                    <p class="uppercase font-bold text-2xl">
+                        diploma in software engineering
+                    </p>
+                    <p>Zetect University, Ruiru</p>
                 </div>
             </div>
         </section>
@@ -175,9 +130,6 @@
                 </div>
                 <div>
                     <img src="assets/img/projects/zeeliu.png" alt="zeeliu" />
-                </div>
-                <div>
-                    <img src="assets/img/projects/meta.png" alt="meta" />
                 </div>
             </div>
         </section>
@@ -221,22 +173,6 @@
                 <div class="icon-div">
                     <img src="assets/img/icons/mysql.svg" alt="mysql" class="h-20" />
                     <div class="uppercase font-bold text-orange-400">mysql</div>
-                </div>
-                <div class="icon-div">
-                    <img src="assets/img/icons/python.svg" alt="python" class="h-20" />
-                    <div class="uppercase font-bold text-orange-400">python</div>
-                </div>
-                <div class="icon-div">
-                    <img src="assets/img/icons/flask.svg" alt="flask" class="h-20" />
-                    <div class="uppercase font-bold text-orange-400">flask</div>
-                </div>
-                <div class="icon-div">
-                    <img src="assets/img/icons/rest-api.svg" alt="rest" class="h-20" />
-                    <div class="uppercase font-bold text-orange-400">restful api</div>
-                </div>
-                <div class="icon-div">
-                    <img src="assets/img/icons/prisma.svg" alt="prisma" class="h-20" />
-                    <div class="uppercase font-bold text-orange-400">prisma</div>
                 </div>
                 <div class="icon-div">
                     <img src="assets/img/icons/git.svg" alt="git" class="h-20" />
